@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile" />
+    <item
+        android:id="@+id/timetable"
+        android:title="Timetable"
+        android:icon="@drawable/ic_timetable" />
+    <item
+        android:id="@+id/resources"
+        android:title="Resources"
+        android:icon="@drawable/ic_resources" />
+    <item
+        android:id="@+id/cgpa_cal"
+        android:title="CGPA"
+        android:icon="@drawable/ic_cgpa" />
+</menu>

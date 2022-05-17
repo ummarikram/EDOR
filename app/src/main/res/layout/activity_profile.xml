@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2AA6CE"
     android:orientation="vertical"
-    tools:context=".Profile">
+    tools:context=".activities.Profile">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_pic"

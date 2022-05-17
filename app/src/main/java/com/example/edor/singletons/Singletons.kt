@@ -1,6 +1,7 @@
 package com.example.edor
 
 import android.content.Context
+import com.example.edor.sqlDatabases.TimetableDatabase
 
 object DatabaseFactory {
 

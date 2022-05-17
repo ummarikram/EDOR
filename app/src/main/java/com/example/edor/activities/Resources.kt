@@ -1,4 +1,4 @@
-package com.example.edor
+package com.example.edor.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,9 @@ import android.widget.AutoCompleteTextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.edor.R
+import com.example.edor.Resource
+import com.example.edor.recyclerAdaptors.ResourceRecyclerAdaptor
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Resources : AppCompatActivity() {
@@ -55,7 +58,7 @@ class Resources : AppCompatActivity() {
 
         resourceArrayList.add(Resource("SMD", "Final Term Spring 2020.pdf"))
 
-        recyclerAdapter=ResourceRecyclerAdaptor(resourceArrayList)
+        recyclerAdapter= ResourceRecyclerAdaptor(resourceArrayList)
 
         recyclerView.adapter = recyclerAdapter
 
@@ -70,17 +73,17 @@ class Resources : AppCompatActivity() {
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId){
                 R.id.profile -> {
-                    val i = Intent(this,Profile::class.java)
+                    val i = Intent(this, Profile::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
                 R.id.cgpa_cal -> {
-                    val i = Intent(this,Calculator::class.java)
+                    val i = Intent(this, Calculator::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
                 R.id.timetable -> {
-                    val i = Intent(this,Timetable::class.java)
+                    val i = Intent(this, Timetable::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }

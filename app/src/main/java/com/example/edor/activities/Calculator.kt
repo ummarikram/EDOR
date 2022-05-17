@@ -1,4 +1,4 @@
-package com.example.edor
+package com.example.edor.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.edor.*
+import com.example.edor.recyclerAdaptors.GradeRecyclerAdaptor
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -47,7 +49,7 @@ class Calculator : AppCompatActivity() {
 
         gradeArrayList = arrayListOf<Grade>()
 
-        recyclerAdapter=GradeRecyclerAdaptor(gradeArrayList)
+        recyclerAdapter= GradeRecyclerAdaptor(gradeArrayList)
 
         recyclerView.adapter = recyclerAdapter
 
@@ -97,7 +99,7 @@ class Calculator : AppCompatActivity() {
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId){
                 R.id.profile -> {
-                    val i = Intent(this,Profile::class.java)
+                    val i = Intent(this, Profile::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
@@ -105,12 +107,12 @@ class Calculator : AppCompatActivity() {
                     true
                 }
                 R.id.timetable -> {
-                    val i = Intent(this,Timetable::class.java)
+                    val i = Intent(this, Timetable::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
                 R.id.resources -> {
-                    val i = Intent(this,Resources::class.java)
+                    val i = Intent(this, Resources::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }

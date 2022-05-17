@@ -1,15 +1,18 @@
-package com.example.edor
+package com.example.edor.sqlDatabases
 
-import android.R.style
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.widget.Toast
+import com.example.edor.Schedule
 
 
-class TimetableDatabase(context:Context):SQLiteOpenHelper(context,DATABASE_NAME,null,DATABASE_VERSION) {
+class TimetableDatabase(context:Context):SQLiteOpenHelper(context,
+    DATABASE_NAME,null,
+    DATABASE_VERSION
+) {
 
     companion object {
         const val DATABASE_VERSION = 1;
@@ -31,7 +34,7 @@ class TimetableDatabase(context:Context):SQLiteOpenHelper(context,DATABASE_NAME,
         onCreate(db)
     }
 
-    fun deleteSchedule(schedule:Schedule, context: Context)
+    fun deleteSchedule(schedule: Schedule, context: Context)
     {
         val db = this.writableDatabase
 
@@ -51,7 +54,7 @@ class TimetableDatabase(context:Context):SQLiteOpenHelper(context,DATABASE_NAME,
         db.close()
     }
 
-    fun insertSchedule(schedule:Schedule, context: Context):Long{
+    fun insertSchedule(schedule: Schedule, context: Context):Long{
         val db=this.writableDatabase
 
         val contentValues=ContentValues()

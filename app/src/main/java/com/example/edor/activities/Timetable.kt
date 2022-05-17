@@ -1,4 +1,4 @@
-package com.example.edor
+package com.example.edor.activities
 
 import android.annotation.SuppressLint
 import android.app.TimePickerDialog
@@ -8,6 +8,11 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.edor.DatabaseFactory
+import com.example.edor.R
+import com.example.edor.Schedule
+import com.example.edor.TimetableRecycleAdaptor
+import com.example.edor.sqlDatabases.TimetableDatabase
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -53,7 +58,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
 
         scheduleArrayList = arrayListOf<Schedule>()
 
-        recyclerAdapter=TimetableRecycleAdaptor(scheduleArrayList)
+        recyclerAdapter= TimetableRecycleAdaptor(scheduleArrayList)
 
         recyclerView.adapter=recyclerAdapter
 
@@ -125,12 +130,12 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
         bottom_navigation.setOnItemSelectedListener {
             when (it.itemId){
                 R.id.profile -> {
-                    val i = Intent(this,Profile::class.java)
+                    val i = Intent(this, Profile::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
                 R.id.cgpa_cal -> {
-                    val i = Intent(this,Calculator::class.java)
+                    val i = Intent(this, Calculator::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }
@@ -138,7 +143,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                     true
                 }
                 R.id.resources -> {
-                    val i = Intent(this,Resources::class.java)
+                    val i = Intent(this, Resources::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                 }

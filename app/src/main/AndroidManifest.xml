@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDOR">
         <activity
-            android:name=".Calculator"
+            android:name=".activities.Calculator"
             android:exported="false" />
         <activity
-            android:name=".Timetable"
+            android:name=".activities.Timetable"
             android:exported="false"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Resources"
+            android:name=".activities.Resources"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".activities.Profile"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"

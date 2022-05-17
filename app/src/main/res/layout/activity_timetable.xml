@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2AA6CE"
     android:orientation="vertical"
-    tools:context=".Timetable">
+    tools:context=".activities.Timetable">
 
     <TextView
         android:id="@+id/textView2"

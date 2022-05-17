@@ -1,4 +1,4 @@
-package com.example.edor
+package com.example.edor.recyclerAdaptors
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,16 +6,19 @@ import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.edor.Grade
+import com.example.edor.GradePoints
+import com.example.edor.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class GradeRecyclerAdaptor(private val gradeList:ArrayList< Grade >): RecyclerView.Adapter<GradeRecyclerAdaptor.ViewHolder>() {
+class GradeRecyclerAdaptor(private val gradeList:ArrayList<Grade>): RecyclerView.Adapter<GradeRecyclerAdaptor.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GradeRecyclerAdaptor.ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.grade_layout,parent,false)
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: GradeRecyclerAdaptor.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var curr = gradeList[position]
         holder.course.text = curr.course
         holder.credit.text = "CREDIT HOURS : " + curr.creditHour.toString()

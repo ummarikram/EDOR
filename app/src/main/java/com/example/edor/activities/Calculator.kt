@@ -13,7 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class Calculator : AppCompatActivity() {
 
-    var grades: Array<String> = arrayOf("A+", "A", "A-", "B+", "B", "B-", "C+", "C")
+    var grades: Array<String> = GradePoints.getGradeArray().toTypedArray()
     private var recyclerLayoutManager: RecyclerView.LayoutManager?=null
     private var recyclerAdapter: RecyclerView.Adapter<GradeRecyclerAdaptor.ViewHolder>?=null
     lateinit var gradeArrayList : ArrayList<Grade>

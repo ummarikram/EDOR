@@ -22,4 +22,8 @@ object GradePoints {
     fun getGradePoint(grade: String): Double? {
         return gradePoint[grade]
     }
+
+    fun getGradeArray(): List<String>{
+        return gradePoint.keys.toList()
+    }
 }

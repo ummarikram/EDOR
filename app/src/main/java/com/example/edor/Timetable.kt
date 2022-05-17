@@ -4,15 +4,12 @@ import android.annotation.SuppressLint
 import android.app.TimePickerDialog
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import java.io.File
-import java.io.FileOutputStream
 
 class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
 
@@ -27,7 +24,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
     private lateinit var start: Button
     private lateinit var end: Button
     private var recyclerLayoutManager: RecyclerView.LayoutManager?=null
-    private var recyclerAdapter: RecyclerView.Adapter<RecycleAdaptor.ViewHolder>?=null
+    private var recyclerAdapter: RecyclerView.Adapter<TimetableRecycleAdaptor.ViewHolder>?=null
     lateinit var scheduleArrayList : ArrayList<Schedule>
     private lateinit var timetableDatabase: TimetableDatabase
 
@@ -52,11 +49,11 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
 
         recyclerView.layoutManager = recyclerLayoutManager
 
-        timetableDatabase = TimetableDatabase(this)
+        timetableDatabase = DatabaseFactory.getTimetableDatabaseInstance(this)!!
 
         scheduleArrayList = arrayListOf<Schedule>()
 
-        recyclerAdapter=RecycleAdaptor(scheduleArrayList)
+        recyclerAdapter=TimetableRecycleAdaptor(scheduleArrayList)
 
         recyclerView.adapter=recyclerAdapter
 
@@ -70,7 +67,6 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
 
         autoCompleteTextViewTimetable.setOnItemClickListener {parent, view, position, id ->
 
-            // Toast.makeText(this, "Clicked item : ${days[position]}",Toast.LENGTH_SHORT).show()
             day = days[position]
 
             try {
@@ -82,7 +78,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                 recyclerView.adapter?.notifyDataSetChanged()
             }
             catch (e: NullPointerException) {
-                Toast.makeText(this, "Error : ${e.toString()}",Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error : ${e.toString()}",Toast.LENGTH_SHORT).show()
             }
 
         }

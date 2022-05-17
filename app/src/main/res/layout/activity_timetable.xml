@@ -21,6 +21,7 @@
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/BlackBorderAdjust"
         android:id="@+id/Dropdown_timetable"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
@@ -66,6 +67,7 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:hint="Course"
+        android:maxLength="30"
         android:textColorHint="@color/cardview_dark_background"
         android:textColor="@color/black" />
 

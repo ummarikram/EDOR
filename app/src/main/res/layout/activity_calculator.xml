@@ -1,21 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2AA6CE"
+    android:orientation="vertical"
     tools:context=".Calculator">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFF"
-        app:itemIconTint="@color/black"
-        app:itemTextColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_menu" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="CHECK STANDING!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        tools:ignore="TextContrastCheck" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gradeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/grade_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:maxLength="30"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:hint="Course"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Hours"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white">
+
+    </TextView>
+
+    <NumberPicker
+        android:id="@+id/course_credit_hours"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        >
+
+    </NumberPicker>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/BlackBorderAdjust"
+        android:id="@+id/Dropdown_grades"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        app:boxBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_grade"
+        app:startIconTint="@color/cardview_dark_background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewGrades"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:inputType="none"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Grade"
+            android:textColor="@color/black"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_grade"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bottom_navigation"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:contentDescription="@string/add_resource"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_addresource"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/check_cgpa"
+            android:layout_width="158dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bottom_navigation"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="90dp"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:contentDescription="@string/add_resource"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_check"
+            tools:ignore="ImageContrastCheck" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFF"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_menu"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

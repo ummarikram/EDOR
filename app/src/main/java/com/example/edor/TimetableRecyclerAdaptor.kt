@@ -8,14 +8,14 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class RecycleAdaptor(private val scheduleList:ArrayList< Schedule >): RecyclerView.Adapter<RecycleAdaptor.ViewHolder>() {
+class TimetableRecycleAdaptor(private val scheduleList:ArrayList< Schedule >): RecyclerView.Adapter<TimetableRecycleAdaptor.ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecycleAdaptor.ViewHolder {
-        val v= LayoutInflater.from(parent.context).inflate(R.layout.resource_layout,parent,false)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TimetableRecycleAdaptor.ViewHolder {
+        val v= LayoutInflater.from(parent.context).inflate(R.layout.timetable_layout,parent,false)
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(holder: RecycleAdaptor.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TimetableRecycleAdaptor.ViewHolder, position: Int) {
         var curr=scheduleList[position]
         holder.course.text = curr.course
         holder.startTime.text= curr.startTime
@@ -25,14 +25,16 @@ class RecycleAdaptor(private val scheduleList:ArrayList< Schedule >): RecyclerVi
             val removedItem: Schedule = scheduleList.get(position)
 
             Toast.makeText(holder.itemView.context, "Removed Course : ${removedItem.course}", Toast.LENGTH_SHORT).show()
-            // remove your item from data base
-            scheduleList.removeAt(position) // remove the item from list
 
-            var database = TimetableDatabase(holder.itemView.context)
+            var database = DatabaseFactory.getTimetableDatabaseInstance(holder.itemView.context)
 
-            database.deleteSchedule(removedItem, holder.itemView.context)
+            if (database != null) {
+                database.deleteSchedule(removedItem, holder.itemView.context)
+                // remove your item from data base
+                scheduleList.removeAt(position) // remove the item from list
 
-            notifyItemRemoved(position) // notify the adapter about the removed item
+                notifyDataSetChanged()
+            }
         })
     }
 

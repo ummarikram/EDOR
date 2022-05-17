@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/resource_title"
+                android:id="@+id/course_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -31,24 +31,56 @@
                 android:layout_marginEnd="60dp"
                 android:text="SMD"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/download_course"
+                android:id="@+id/remove_course"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:backgroundTint="#e06666"
                 android:clickable="true"
                 android:contentDescription="RemoveCourse"
                 app:borderWidth="0dp"
-                app:srcCompat="@drawable/ic_download" />
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
         </RelativeLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <TextView
+                android:id="@+id/startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="13:09"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/time_seperator"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="13:09"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
     </LinearLayout>
-
 
 
 </androidx.cardview.widget.CardView>

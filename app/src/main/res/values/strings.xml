@@ -6,12 +6,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="grab_resources">GRAB RESOURCES!</string>
     <string name="choose_course">Choose Course</string>
-    <string name="manage_your_time">MANAGE YOUR TIME</string>
+    <string name="manage_your_time">MANAGE YOUR TIME!</string>
     <string name="choose_day">Choose Day</string>
-
-    <string-array name="courses">
-        <item>Software for Mobile</item>
-        <item>Artificial Intelligence</item>
-    </string-array>
 
 </resources>

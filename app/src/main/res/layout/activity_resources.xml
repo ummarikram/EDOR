@@ -21,6 +21,7 @@
         tools:ignore="TextContrastCheck" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:theme="@style/BlackBorderAdjust"
         android:id="@+id/Dropdown_resources"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         app:boxBackgroundColor="@color/white"
@@ -48,8 +49,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resourceRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="350dp"
+        android:layout_margin="20dp"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"

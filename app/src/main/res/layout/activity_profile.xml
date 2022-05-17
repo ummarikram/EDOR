@@ -22,7 +22,8 @@
         app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.167" />
+        app:layout_constraintVertical_bias="0.167"
+        android:clickable="true"/>
 
     <TextView
         android:id="@+id/labelName"
@@ -87,13 +88,13 @@
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="285dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
         android:paddingLeft="20dp"
         android:text="ummarikram@gmail.com"
         android:textColor="@color/white"

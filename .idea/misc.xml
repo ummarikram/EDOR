@@ -7,12 +7,12 @@
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_cgpa.xml" value="0.1755" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_profile.xml" value="0.2015" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_resources.xml" value="0.2015" />
-        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_calculator.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_calculator.xml" value="0.4" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_main.xml" value="0.152" />
-        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_profile.xml" value="0.2" />
-        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_resources.xml" value="0.4" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_profile.xml" value="0.4" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_resources.xml" value="0.264" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_splash_screen.xml" value="0.21467391304347827" />
-        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_timetable.xml" value="0.264" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/activity_timetable.xml" value="0.20761245674740483" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/dropdown_courses.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/dropdown_item.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/fragment_c_g_p_a.xml" value="0.22826086956521738" />
@@ -22,7 +22,9 @@
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/fragment_resources.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/fragment_timetable.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/grade_layout.xml" value="0.742014742014742" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/resource_layout.xml" value="0.264" />
+        <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/layout/timetable_layout.xml" value="0.264" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/menu/bottom_menu.xml" value="0.20052083333333334" />
       </map>
     </option>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2AA6CE"
+    android:orientation="vertical"
+    tools:context=".auth.Register">
+
+    <RelativeLayout
+        android:id="@+id/RegisterSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/registerProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/RegisterGreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:text="WELCOME TO EDOR!" />
+
+        <TextView
+            android:id="@+id/RegisterNameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:text="NAME"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/RegisterNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="Ummar Ikram"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/RegisterUniversityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:text="UNIVERSITY"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/RegisterUniversityText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="FAST NU"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/RegisterProgramLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:text="PROGRAM"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/RegisterProgramText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="BS-CS"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/RegisterEmailLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:text="EMAIL"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/RegisterEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:ems="10"
+            android:hint="ummarikram@gmail.com"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            android:textColorHint="#bcbcbc" />
+
+        <TextView
+            android:id="@+id/RegisterPasswordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/black"
+            android:text="PASSWORD"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/RegisterPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="*********"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:textColorHint="#bcbcbc"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:padding="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+
+</LinearLayout>

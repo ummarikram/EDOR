@@ -102,6 +102,7 @@ class Calculator : AppCompatActivity() {
                     val i = Intent(this, Profile::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
                 R.id.cgpa_cal -> {
                     true
@@ -110,11 +111,13 @@ class Calculator : AppCompatActivity() {
                     val i = Intent(this, Timetable::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
                 R.id.resources -> {
                     val i = Intent(this, Resources::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
             }
             true

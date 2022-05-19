@@ -108,9 +108,17 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
         }
 
         addTime.setOnClickListener{
-                if (startHour != -1 && endHour!=-1 && day != null && courseName.text.toString() != "")
+
+                if (courseName.text.toString().trim().isEmpty())
                 {
-                      var schedule = Schedule(day!!, courseName.text.toString(),start.text.toString(), end.text.toString())
+                    courseName.setError("Course Name is Required!")
+                    courseName.requestFocus()
+                    return@setOnClickListener
+                }
+
+                if (startHour != -1 && endHour!=-1 && day != null)
+                {
+                      var schedule = Schedule(day!!, courseName.text.toString().trim(),start.text.toString(), end.text.toString())
 
                       var status = timetableDatabase.insertSchedule(schedule, this)
 
@@ -125,6 +133,9 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                             recyclerView.adapter?.notifyDataSetChanged()
                         }
                 }
+                else{
+                    Toast.makeText(this, "Please choose a day and time slot!",Toast.LENGTH_SHORT).show()
+                }
         }
 
         bottom_navigation.setOnItemSelectedListener {
@@ -133,11 +144,13 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                     val i = Intent(this, Profile::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
                 R.id.cgpa_cal -> {
                     val i = Intent(this, Calculator::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
                 R.id.timetable -> {
                     true
@@ -146,6 +159,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                     val i = Intent(this, Resources::class.java)
                     startActivity(i)
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
                 }
             }
             true

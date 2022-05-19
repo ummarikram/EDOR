@@ -8,6 +8,23 @@
     android:orientation="vertical"
     tools:context=".activities.Profile">
 
+    <RelativeLayout
+        android:id="@+id/ProfileSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/loginProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_pic"
         android:layout_width="match_parent"
@@ -29,61 +46,60 @@
         android:id="@+id/labelName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="5dp"
-        android:text="Name"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="NAME"
+        android:textSize="24sp"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="285dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:text="Ummar Ikram"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/labelUniversity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="5dp"
-        android:text="University"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="UNIVERSITY"
+        android:textSize="24sp"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="285dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editUniversity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:text="FAST NU"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/labelEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="5dp"
-        android:text="Email"
-        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="EMAIL"
+        android:textSize="24sp"
         android:textColor="@color/black"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="285dp" />
@@ -92,52 +108,49 @@
         android:id="@+id/editEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:paddingTop="20dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="20dp"
-        android:text="ummarikram@gmail.com"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/labelProgram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="20dp"
-        android:paddingBottom="5dp"
-        android:text="Program"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-light"
+        android:text="PROGRAM"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="285dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editProgram"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:text="Computer Science"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
         android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:textSize="18sp" />
 
     <Button
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="#000000"
-
         android:insetLeft="100dp"
         android:insetRight="100dp"
-        android:text="Submit"
+        android:text="LOGOUT"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:cornerRadius="50dp" />
+        app:cornerRadius="10dp" />
 
     <RelativeLayout
         android:layout_width="wrap_content"

@@ -1,12 +1,17 @@
 package com.example.edor.recyclerAdaptors
 
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.edor.R
 import com.example.edor.Resource
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+
 
 class ResourceRecyclerAdaptor(private val resourceList:ArrayList<Resource>): RecyclerView.Adapter<ResourceRecyclerAdaptor.ViewHolder>() {
 
@@ -19,6 +24,17 @@ class ResourceRecyclerAdaptor(private val resourceList:ArrayList<Resource>): Rec
         var curr = resourceList[position]
         holder.resource.text = curr.name
 
+        holder.download.setOnClickListener{
+            val selectedItem: Resource = resourceList.get(position)
+
+            val browserIntent = Intent(Intent.ACTION_VIEW)
+            browserIntent.setDataAndType(Uri.parse(selectedItem.url!!), "application/pdf")
+
+            val chooser = Intent.createChooser(browserIntent, "Choose app")
+            chooser.flags = Intent.FLAG_ACTIVITY_NEW_TASK // optional
+
+            startActivity(holder.itemView.context, chooser, null)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -26,9 +42,11 @@ class ResourceRecyclerAdaptor(private val resourceList:ArrayList<Resource>): Rec
     }
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var resource: TextView
+        var download: FloatingActionButton
 
         init {
             resource=itemView.findViewById(R.id.resource_title)
+            download=itemView.findViewById(R.id.download_course)
         }
 
     }

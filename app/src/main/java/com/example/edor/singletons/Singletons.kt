@@ -27,3 +27,45 @@ object GradePoints {
         return gradePoint.keys.toList()
     }
 }
+
+object UserInfo {
+
+    private var name: String? = null
+    private var university:String? = null
+    private var program:String? = null
+    private var email: String? = null
+
+    fun getName(): String? {
+        return name
+    }
+
+    fun getUniversity(): String? {
+        return university
+    }
+
+    fun getProgram(): String? {
+        return program
+    }
+
+    fun getEmail(): String? {
+        return email
+    }
+
+    fun setName(value: String?){
+         name = value
+    }
+
+    fun setUniversity(value: String?) {
+         university = value
+    }
+
+    fun setProgram(value: String?) {
+         program = value
+    }
+
+    fun setEmail(value: String?) {
+         email = value
+    }
+
+
+}

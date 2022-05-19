@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "24561612327",
+    "project_id": "edor-app",
+    "storage_bucket": "edor-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24561612327:android:73996d32aec76123db4002",
+        "android_client_info": {
+          "package_name": "com.example.edor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24561612327-tpi0u5fvu3frn4j7frctdnse76ettmg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArqsNib18x6l48uIUQgKg7gwKgJNzGILg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24561612327-tpi0u5fvu3frn4j7frctdnse76ettmg1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

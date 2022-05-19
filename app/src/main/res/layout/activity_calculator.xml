@@ -39,6 +39,7 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:hint="Course"
+        android:maxLines="1"
         android:textColorHint="@color/cardview_dark_background"
         android:textColor="@color/black" />
 

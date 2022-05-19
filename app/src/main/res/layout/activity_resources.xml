@@ -8,6 +8,22 @@
     tools:context=".activities.Resources"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:id="@+id/UploadSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true">
+
+        </ProgressBar>
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -51,15 +67,30 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/resourceRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:hint="File Name"
+        android:maxLines="1"
+        android:maxLength="30"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColor="@color/black" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton5"
+            android:id="@+id/addResourceBtn"
             android:layout_width="158dp"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/bottom_navigation"
@@ -68,9 +99,9 @@
             android:backgroundTint="@color/white"
             android:clickable="true"
             android:contentDescription="@string/add_resource"
+            android:focusable="true"
             app:srcCompat="@drawable/ic_addresource"
-            tools:ignore="ImageContrastCheck"
-            android:focusable="true" />
+            tools:ignore="ImageContrastCheck" />
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

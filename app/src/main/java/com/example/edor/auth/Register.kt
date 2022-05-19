@@ -106,7 +106,7 @@ class Register : AppCompatActivity() {
                     FirebaseDatabase.getInstance().getReference("Users")
                         .child(it1.uid).setValue(user).addOnCompleteListener { response ->
                             if (response.isSuccessful){
-                                Toast.makeText(this, "User registered successfully!", Toast.LENGTH_LONG).show()
+                                Toast.makeText(this, "Please check your email for verification!", Toast.LENGTH_LONG).show()
 
                             }
                             else{

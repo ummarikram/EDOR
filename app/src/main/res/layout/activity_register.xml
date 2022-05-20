@@ -25,22 +25,34 @@
 
     </RelativeLayout>
 
-    <TextView
-            android:id="@+id/RegisterGreet"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:fontFamily="sans-serif-light"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="34sp"
-            android:text="WELCOME TO EDOR!" />
+<!--    <TextView-->
+<!--            android:id="@+id/RegisterGreet"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="35dp"-->
 
-        <TextView
+<!--            android:fontFamily="sans-serif-light"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="32sp"-->
+<!--            android:text="WELCOME TO EDOR!" />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:clickable="true"
+        android:backgroundTint="@color/white"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:focusable="true" />
+
+    <TextView
             android:id="@+id/RegisterNameLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:layout_marginStart="50dp"
             android:fontFamily="sans-serif-light"
             android:layout_marginEnd="50dp"

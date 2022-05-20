@@ -24,6 +24,17 @@
 
     </RelativeLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButtonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:clickable="true"
+        android:backgroundTint="@color/white"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:focusable="true" />
+
     <TextView
         android:id="@+id/LoginGreet"
         android:layout_width="match_parent"

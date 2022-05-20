@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.RelativeLayout
 import android.widget.Toast
 import com.example.edor.R
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 
 class Reset : AppCompatActivity() {
@@ -26,6 +27,12 @@ class Reset : AppCompatActivity() {
         reset = findViewById(R.id.ResetButton)
         progressBar = findViewById(R.id.ResetSpinner)
         email = findViewById(R.id.ResetEmailText)
+
+        val backBtn = findViewById<FloatingActionButton>(R.id.backButtonReset)
+
+        backBtn.setOnClickListener{
+            onBackPressed();
+        }
 
         reset.setOnClickListener{view ->
             resetPassword()

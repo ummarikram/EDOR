@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.*
 import com.example.edor.R
 import com.example.edor.dataClasses.User
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -24,6 +25,7 @@ class Register : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -34,6 +36,11 @@ class Register : AppCompatActivity() {
         email = findViewById(R.id.RegisterEmailText)
         password = findViewById(R.id.RegisterPasswordText)
         progressBar = findViewById(R.id.RegisterSpinner)
+        val backBtn = findViewById<FloatingActionButton>(R.id.backButton)
+
+        backBtn.setOnClickListener{
+            onBackPressed();
+        }
 
         register.setOnClickListener{
                 registerUser()

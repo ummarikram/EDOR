@@ -25,17 +25,6 @@
 
     </RelativeLayout>
 
-<!--    <TextView-->
-<!--            android:id="@+id/RegisterGreet"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="35dp"-->
-
-<!--            android:fontFamily="sans-serif-light"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="32sp"-->
-<!--            android:text="WELCOME TO EDOR!" />-->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/backButton"
@@ -44,6 +33,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
         android:clickable="true"
+        android:contentDescription="Back to Home"
         android:backgroundTint="@color/white"
         app:srcCompat="?attr/actionModeCloseDrawable"
         android:focusable="true" />

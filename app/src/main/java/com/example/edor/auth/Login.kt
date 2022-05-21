@@ -8,6 +8,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.edor.R
 import com.example.edor.activities.Profile
+import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
@@ -17,7 +18,7 @@ class Login : AppCompatActivity(), View.OnClickListener {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var progressBar: RelativeLayout
     private lateinit var email: EditText
-    private lateinit var password: EditText
+    private lateinit var password: TextInputEditText
     private lateinit var register: TextView
     private lateinit var reset: TextView
     private lateinit var signin: Button

@@ -143,13 +143,13 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                 R.id.profile -> {
                     val i = Intent(this, Profile::class.java)
                     startActivity(i)
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    overridePendingTransition(0,0)
                     finish()
                 }
                 R.id.cgpa_cal -> {
                     val i = Intent(this, Calculator::class.java)
                     startActivity(i)
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    overridePendingTransition(0,0)
                     finish()
                 }
                 R.id.timetable -> {
@@ -158,7 +158,7 @@ class Timetable : AppCompatActivity(), TimePickerDialog.OnTimeSetListener {
                 R.id.resources -> {
                     val i = Intent(this, Resources::class.java)
                     startActivity(i)
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    overridePendingTransition(0,0)
                     finish()
                 }
             }

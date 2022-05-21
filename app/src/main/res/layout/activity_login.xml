@@ -78,19 +78,30 @@
         android:text="PASSWORD"
         android:textSize="24sp"/>
 
-    <EditText
-        android:id="@+id/LoginPasswordText"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:ems="10"
-        android:hint="******"
-        android:inputType="textPersonName"
+        app:passwordToggleEnabled="true"
+        android:hint="Enter your password!"
         android:minHeight="48dp"
-        android:maxLines="1"
         android:textColor="@color/white"
-        android:textColorHint="#bcbcbc" />
+        android:textColorHint="#bcbcbc" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/LoginPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:maxLines="1"
+
+            android:maxLength="15"
+            android:ems="15">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/LoginButton"

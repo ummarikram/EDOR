@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SMD/EDOR/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/SMD/EDOR/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_addresource.xml" value="0.1925" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_cgpa.xml" value="0.1755" />
         <entry key="..\:/Users/PERSONAL/AndroidStudioProjects/EDOR/app/src/main/res/drawable/ic_profile.xml" value="0.2015" />

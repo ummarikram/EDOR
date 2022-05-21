@@ -21,21 +21,21 @@ class SplashScreenActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-        splashLogo.alpha = 0f
-        splashLogo.animate().setDuration(1500).alpha(1f).withEndAction {
+        val user : FirebaseUser? = mAuth.currentUser
 
-            val user : FirebaseUser? = mAuth.currentUser
+        // redirect to profile
+        if (user != null)
+        {
+            val i = Intent(this, Profile::class.java)
+            startActivity(i)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+            finish()
+        }
+        else {
 
-            // redirect to profile
-            if (user != null)
-            {
-                val i = Intent(this, Profile::class.java)
-                startActivity(i)
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-                finish()
-            }
-            else
-            {
+            splashLogo.alpha = 0f
+            splashLogo.animate().setDuration(1500).alpha(1f).withEndAction {
+
                 val i = Intent(this, Login::class.java)
                 startActivity(i)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)

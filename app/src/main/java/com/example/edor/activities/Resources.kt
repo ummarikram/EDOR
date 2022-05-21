@@ -147,8 +147,6 @@ class Resources : AppCompatActivity() {
 
         resourceArrayList = arrayListOf<Resource>()
 
-//        resourceArrayList.add(Resource("SMD", "Final Term Spring 2020.pdf"))
-
         recyclerAdapter= ResourceRecyclerAdaptor(resourceArrayList)
 
         recyclerView.adapter = recyclerAdapter
@@ -178,12 +176,9 @@ class Resources : AppCompatActivity() {
         }
 
         autoCompleteTextViewResources.setOnItemClickListener {parent, view, position, id ->
-
-            if (category != courses[position]) {
                 category = courses[position]
 
                 fetchAllFilesByCategory()
-            }
         }
 
         bottom_navigation.setOnItemSelectedListener {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2AA6CE"
     android:orientation="vertical"
-    tools:context=".auth.Reset">
+    tools:context="com.ummarikram.edor.auth.Reset">
 
     <RelativeLayout
         android:id="@+id/ResetSpinner"

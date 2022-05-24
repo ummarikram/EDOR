@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.edor">
+    package="com.ummarikram.edor">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -14,37 +14,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDOR">
         <activity
-            android:name=".auth.Reset"
+            android:name="com.ummarikram.edor.auth.Reset"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".auth.Register"
+            android:name="com.ummarikram.edor.auth.Register"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".auth.Login"
+            android:name="com.ummarikram.edor.auth.Login"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activities.Calculator"
+            android:name="com.ummarikram.edor.activities.Calculator"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activities.Timetable"
-            android:exported="false"
-            android:windowSoftInputMode="adjustPan"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".activities.Resources"
+            android:name="com.ummarikram.edor.activities.Timetable"
             android:exported="false"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".activities.Profile"
+            android:name="com.ummarikram.edor.activities.Resources"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.ummarikram.edor.activities.Profile"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".SplashScreenActivity"
+            android:name="com.ummarikram.edor.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/SplashScreenTheme"
             android:screenOrientation="portrait">

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2AA6CE"
-    tools:context=".activities.Resources"
+    tools:context="com.ummarikram.edor.activities.Resources"
     android:orientation="vertical">
 
     <RelativeLayout

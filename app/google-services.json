@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "24561612327",
+    "firebase_url": "https://edor-app-default-rtdb.firebaseio.com",
     "project_id": "edor-app",
     "storage_bucket": "edor-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:24561612327:android:73996d32aec76123db4002",
+        "mobilesdk_app_id": "1:24561612327:android:788de942f775a8b9db4002",
         "android_client_info": {
-          "package_name": "com.example.edor"
+          "package_name": "com.ummarikram.edor"
         }
       },
       "oauth_client": [

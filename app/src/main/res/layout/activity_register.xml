@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2AA6CE"
     android:orientation="vertical"
-    tools:context=".auth.Register">
+    tools:context="com.ummarikram.edor.auth.Register">
 
     <RelativeLayout
         android:id="@+id/RegisterSpinner"

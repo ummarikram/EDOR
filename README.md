@@ -6,34 +6,13 @@ EDOR (Education through Distribution of Resources) is a multi-purpose education 
 
 ![Image of Graphic](https://github.com/ummarikram/EDOR/blob/master/app%20screens/App%20graphic.png)
 
-## SPLASH SCREEN
+LOGIN  | SIGNUP | RESET
+:-------------------------:|:-------------------------:|:-------------------------:
+![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Login.jpeg) | ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Register.jpeg) | ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Reset.jpeg)
 
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Splash.jpeg)
 
-## LOGIN
 
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Login.jpeg)
+RESOURCE  | TIMETABLE | CGPA
+:-------------------------:|:-------------------------:|:-------------------------:
+![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/resource.jpeg) | ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Timetable.jpeg) | ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/cgpa.jpeg)
 
-## REGISTER
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Register.jpeg)
-
-## RESET
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Reset.jpeg)
-
-## PROFILE
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Profile.jpeg)
-
-## RESOURCES
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/resource.jpeg)
-
-## TIMETABLE
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Timetable.jpeg)
-
-## CGPA
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/cgpa.jpeg)

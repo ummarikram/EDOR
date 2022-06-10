@@ -26,13 +26,13 @@ EDOR (Education through Distribution of Resources) is a multi-purpose education 
 
 ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Profile.jpeg)
 
+## RESOURCES
+
+![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/resource.jpeg)
+
 ## TIMETABLE
 
 ![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Timetable.jpeg)
-
-## RESOURCES
-
-![Image of Splash](https://github.com/ummarikram/EDOR/blob/master/app%20screens/Resources.jpeg)
 
 ## CGPA
 
